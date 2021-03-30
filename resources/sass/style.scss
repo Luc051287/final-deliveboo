@@ -1,0 +1,28 @@
+@import 'partials/variables';
+@import 'partials/common';
+@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+
+// css per la guest
+@import 'partials/main-guest-show';
+@import 'partials/main-guest-checkout';
+
+// registrazione e login
+@import 'partials/login';
+@import 'partials/register';
+@import 'partials/createRestaurant';
+
+
+// ADMIN
+@import 'partials/_adminDash';
+@import 'partials/_adminDishes';
+@import 'partials/_adminIndexMenu';
+@import 'partials/_adminStatistics';
+
+// 404
+@import 'partials/page404';
+
+// success
+@import 'partials/success';

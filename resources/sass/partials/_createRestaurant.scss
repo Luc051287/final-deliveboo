@@ -1,0 +1,64 @@
+#restaurant-form {
+  display: flex;
+  align-items: center;
+  background-color: $yellow;
+  background-image: linear-gradient(90deg, $yellow 43%, $white 43%);
+  .container {
+    display: flex;
+    align-items: center;
+    .left-side {
+      width: 60%;
+      .register-box {
+        padding: 50px 0;
+        h1 {
+          padding-left: 16%;
+          padding-bottom: 20px;
+        }
+        .form-register {
+          width: 100%;
+        }
+      }
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+      width: 40%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+} 
+
+@media screen and (max-width: 770px) {
+  #restaurant-form {
+    height: 100%;
+    background-color: $yellow;
+    background-image: linear-gradient( $yellow 51%, $white 67%);
+    .container {
+    flex-direction: column;
+      .left-side {
+        width: 70%;
+        .register-box {
+          h1 {
+            padding-top: 10px;
+            padding-left: 0%;
+            padding-bottom: 10px;
+          }
+          .form-register {
+            width: 100%;
+            padding-bottom: 20px;
+          }
+        }
+      }
+      .right-side {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  } 
+
+}

@@ -1,0 +1,179 @@
+#indexMenu {
+  overflow-y: auto;
+  .box-menu {
+    //riga del piatto
+    .row-food {
+      cursor: pointer;
+      width: 100%;
+      padding: 5px 10px;
+      margin: 10px 0;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      box-shadow: 15px -9px 47px -43px rgb(0 0 0 / 30%);
+      &:hover {
+        transition-duration: 0.4s;
+        background-color: $yellow;
+      }
+      .left-side {
+        display: flex;
+        width: 70%;
+        .tab {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .tab-10 {
+          width: 10%;
+          font-weight: bolder;
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+        .tab-big {
+          width: 80%;
+          text-align: center;
+          span {
+            color: $greenButton;
+            font-weight: bolder;
+            letter-spacing: 3px;
+          }
+        }
+      }
+      .right-side {
+        display: flex;
+        width: 30%;
+        .tab {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: calc(100% / 3);
+          a {
+            i {
+              &:hover {
+                color: $greenButton;
+              }
+            } 
+          }
+          button {
+            i {
+              &:hover {
+                color: $greenButton;
+              }
+            }
+            a {
+              &:hover {
+                color: $greenButton;
+              }
+            } 
+          }
+        }
+      }
+    }
+    .row-visible {
+      background-color: lightgray;
+    }
+    // header delle righe
+    .row-info {
+      display: flex;
+      font-weight: bolder;
+      border: 0;
+      background-color: #F9F9F9;
+      border: 1px solid #F9F9F9;
+      padding: 10px 0;
+      &:hover {
+       background-color: #F9F9F9;
+      }
+      .tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .tab-10 {
+        width: 10%;
+        font-weight: bolder;
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+      .tab-big {
+        width: 80%;
+        text-align: center;
+        span {
+          color: $greenButton;
+          font-weight: bolder;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+
+// LG
+@media screen and (max-width: 1200px) {
+  
+  #indexMenu {
+    overflow-y: auto;
+    .box-menu {
+      //riga del piatto
+      .row-food {
+        .left-side {
+          display: flex;
+          width: 85%;
+        }
+        .right-side {
+          display: flex;
+          width: 15%;
+        }
+      }
+    }
+  }
+
+}
+
+// SM
+@media screen and (max-width: 780px) {
+
+  #indexMenu {
+    overflow-y: auto;
+    .box-menu {
+      //riga del piatto
+      .row-food {
+        flex-direction: column;
+        padding: 0 0;
+        .left-side {
+          flex-direction: column-reverse;
+          width: 100%;
+          .tab-10 {
+            width: 100%;
+            img {
+              width: 100%;
+              border-radius: 5px 5px 0 0;
+            } 
+          }
+          .tab-id {
+            display: none;
+          }
+          .tab-big {
+            width: 100%;
+            padding: 10px 5px;
+          }
+        }
+        .right-side {
+          display: flex;
+          width: 100%;
+          .tab {
+            padding: 10px 0;
+          }
+        }
+      }
+      // header delle righe
+      .row-info {
+        display: none;
+      }
+    }
+  }
+
+}
